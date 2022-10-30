@@ -86,6 +86,8 @@ An *Access Control Matrix*(ACM) is prepared to give access, an *Access Control L
 
 A given resources should available to the authorized party at all the time. If another unauthorized party is accessing a resource which is required by an authorized party than this attack is called as **interruption**.
 
+
+
 ---
 
 | OSI NETWORK MODEL 7498-1 | OSI NETWORK MODEL 7498-2 |
@@ -125,7 +127,7 @@ Attacks are generally classified into four categories i.e. Interception, Fabrica
 
 2. **Active Attack**: Here, the contents of the original message are modified in some way.
 
-   <img src="E:\MScCS-sem1\Network Security\Diagrams\fig1.12.png" alt="fig1.12" style="zoom:80%;" />
+   <img src="Diagrams\fig1.12.png" alt="fig 1.12" style="zoom:80%;" />
 
    - Trying to pose as another entity involves **masquerade** attacks.
    - Modification attacks can be classified further into **replay attacks** and **alteration of messages**.
