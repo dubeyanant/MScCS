@@ -39,7 +39,7 @@ The kernel follows the *least recently unused (LRU)* algorithm for the buffer po
 
 ![Free list of buffers](Diagrams/Screen_Shot_2017-06-07_at_10.44.09_PM.png)
 
-When the kernel accesses a disk block, it searches for the buffer with the appropriate device-block number combination. Rather than search the entire buffer pool, it organizes the buffers into separate queues, *hashed* as a function of the device and block number. The hash queues are also doubly linked circular lists. A hashing function which uniformly distributes the buffers across the lists is used. But it also has to be simple so that the performance does not suffer.
+When the kernel accesses a disk block, it searches for the buffer with the appropriate device-block number combination. Rather than searching the entire buffer pool, it organizes the buffers into separate queues, *hashed* as a function of the device and block number. The hash queues are also doubly linked circular lists. A hashing function which uniformly distributes the buffers across the lists is used. But it also has to be simple so that the performance does not suffer.
 
 ![Buffers on the Hash Queues](Diagrams/Screen_Shot_2017-06-07_at_10.52.09_PM.png)
 
@@ -47,7 +47,7 @@ The hash function shown in the figure only depends on the block number; real has
 
 Every disk block in the buffer pool exists on one and only one hash queue and only once on that queue. However, presence of a buffer on a hash queue does not mean that it is busy, it could well be on the free list as well if its status is free.
 
-Therefore, if the kernel wants a particular buffer, it will search it on the queue. But if it wants *any* buffer, it removes a buffer from the free list. **A buffer is always on a hash queue, but it may or may not be on the free list**
+Therefore, if the kernel wants a particular buffer, it will search it on the queue. But if it wants *any* buffer, it removes a buffer from the free list. **A buffer is always on a hash queue, but it may or may not be on the free list**.
 
 ## Scenarios for Retrieval of a Buffer
 
