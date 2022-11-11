@@ -12,11 +12,11 @@
 
 **Cryptography** is the method to achieve security through encoding the message to make it non-readable.
 
-<img src="E:\MScCS-sem1\Network Security\Diagrams\2_1.png" style="zoom:60%;" />
+<img src="Diagrams\2_1.png" style="zoom:60%;" />
 
 **Cryptanalysis** is the technique to decoding the message from non-readable form to readable form without knowing how they were encrypted before.
 
-<img src="E:\MScCS-sem1\Network Security\Diagrams\2_2.png" style="zoom:60%;" />
+<img src="Diagrams\2_2.png" style="zoom:60%;" />
 
 **Cryptology** is a combination of cryptography and cryptanalysis.
 
@@ -26,7 +26,7 @@ Any human readable language is known as **plain text** or **clear text** i.e. A 
 
 When a plain text is encrypted using any encryption algorithm, the resulting message is called **cipher text**.
 
-<img src="E:\MScCS-sem1\Network Security\Diagrams\2_3.png" style="zoom:60%;" />
+<img src="Diagrams\2_3.png" style="zoom:60%;" />
 
 **Substitution** and **transposition** are the two primary ways in which a plain text can be encrypted. When these two techniques are used together we call it as **product cipher**.
 
